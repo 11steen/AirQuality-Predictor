@@ -1,34 +1,71 @@
-# AirPollutionPrediction--Using--Machine-Learning
+Air Quality Prediction Using Machine Learning
 
-Certainly! Here's a detailed description:
+Overview:
+This project is a complete machine learning pipeline for predicting air quality using environmental sensor data. It starts with data preprocessing and exploratory analysis, builds and compares multiple ML models, and finally deploys the best-performing model through a user-friendly Flask web application.
 
-This Python script integrates sensor data with quality control metrics to predict air quality using machine learning algorithms. It begins by loading and preprocessing data from CSV files, merging datasets based on a shared identifier. Exploratory data analysis techniques are then applied to understand the dataset's characteristics and distributions.
+The web app allows users to input sensor readings (weight, humidity, and temperature) and receive real-time air quality predictions. A clean, responsive interface with a background slideshow and dark mode toggle enhances the usability and visual appeal of the application.
 
-Next, the script builds and evaluates multiple machine learning models without explicitly mentioning the algorithms used. It employs cross-validation to assess each model's performance, measuring accuracy and standard deviation. Model comparison is visualized through box plots, aiding in selecting the most effective algorithm for air quality prediction.
+Features:
+Data loading and cleaning from CSV files
 
-Additionally, the script includes a Flask web application component for model deployment. The web app allows users to input sensor readings for weight, humidity, and temperature, generating real-time air quality predictions. This interactive interface enhances accessibility and usability, facilitating air quality monitoring in various environments.
+Merging multiple datasets based on shared identifiers
 
-With its comprehensive approach encompassing data preprocessing, model selection, and web deployment, this script serves as a versatile tool for analyzing and predicting air quality, contributing to environmental monitoring and public health efforts.
+Exploratory data analysis (EDA) using visualization tools
 
-Python packages required for running the script:
+Model building and evaluation using cross-validation (accuracy and standard deviation)
 
-   pandas: For data manipulation and analysis, particularly for reading CSV files and handling data frames.
-   
-   matplotlib: For data visualization, used to create plots such as box plots and histograms.
-   
-   scikit-learn: For machine learning tasks, including model selection, evaluation, and training. This includes modules for model selection, metrics, and various classifiers.
-   
-   Flask: For building web applications in Python, enabling 
+Web app deployment using Flask
 
-These packages can be installed via pip, a package manager for Python, using the following commands:
+Real-time prediction interface with form inputs
 
-         pip install pandas
-         
-         pip install matplotlib
-         
-         pip install scikit-learn
-         
-         pip install Flask
+Dark mode toggle and dynamic background slideshow for modern UI
 
- Once these packages are installed, you should be able to run the Python script successfully.
+Prediction Inputs:
+The model predicts the quality of air based on the following inputs:
+
+Weight (proxy for particulate matter)
+
+Humidity (in percentage)
+
+Temperature (in degrees Celsius)
+
+Example Input for Poor Air Quality:
+Weight: 180.0
+
+Humidity: 85.0
+
+Temperature: 38.0
+
+Libraries Used
+pandas – Data loading and manipulation
+
+matplotlib – Visualization and EDA
+
+scikit-learn – Model training and evaluation
+
+Flask – Web framework for deployment
+
+Bootstrap – Frontend design framework (for responsive layout)
+
+Installation
+Install the required Python libraries:
+
+Installations:
+pip install pandas
+pip install matplotlib
+pip install scikit-learn
+pip install Flask
+To run the application:
+
+To run the application :
+python new_air.py
+
+Future Improvements
+Add live sensor data integration or IoT device support
+
+Expand prediction features (e.g., CO2, NO2 levels)
+
+Store prediction history using a backend database
+
+Deploy the app on a cloud platform (like Render or Heroku)
 
